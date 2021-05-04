@@ -1,6 +1,6 @@
 # Report title goes here
 
-name of author, link to github repo with project work in / link to Edge Impulse projects
+Yang Yifan, https://github.com/Yang-Yifan921/Assessment0018 / link to Edge Impulse projects
 
 ## Introduction
 - an overview of what the project does
@@ -20,7 +20,8 @@ Thinking back to the various application diagrams you have seen through the modu
 *probably ~200 words and a diagram is usually good to convey your design!*
 
 ## Data
-Describe what data sources you have used and any cleaning, wrangling or organising you have done. Including some examples of the data helps others understand what you have been working with.
+There are two groups of data I used. Image for detecting tpye and 
+First is image about types of vehicle. The data source is kaggle: The images are divided into Car, Bus and Truck, and those are also their labels. 
 
 *probably ~200 words and images of what the data 'looks like' are good!*
 
@@ -50,9 +51,9 @@ Synthesis the main results and observations you made from building the project. 
 
 ## Declaration of Authorship
 
-I, AUTHORS NAME HERE, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+I, Yang Yifan, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
 
 
-*Digitally Sign by typing your name here*
+*Yang Yifan*
 
-ASSESSMENT DATE
+29th, April, 2021 
