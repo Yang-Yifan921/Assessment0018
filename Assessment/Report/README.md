@@ -45,9 +45,9 @@ Synthesis the main results and observations you made from building the project. 
 ## Bibliography
 *If you added any references then add them in here using this format:*
 
-1. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). http://google.com
+1. Huttunen, H., Yancheshmeh, F. S., & Chen, K. (2016, June). Car type recognition with deep neural networks. In 2016 IEEE intelligent vehicles symposium (IV) (pp. 1115-1120). IEEE.. https://ieeexplore.ieee.org/abstract/document/7535529/
 
-2. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). http://google.com
+2. Luo, X., Shen, R., Hu, J., Deng, J., Hu, L., & Guan, Q. (2017). A deep convolution neural network model for vehicle recognition and face recognition. Procedia Computer Science, 107, 715-720.https://www.sciencedirect.com/science/article/pii/S1877050917304283
 
 ----
 
