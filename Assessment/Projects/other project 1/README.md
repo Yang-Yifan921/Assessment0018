@@ -107,7 +107,14 @@ image = None
 
 ALL_MODELS = {
 ## 5.Plot 
-
+import matplotlib.pyplot as plt
+acc = history.history['accuracy']
+val_acc = history.history['val_accuracy']
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+epochs = range(len(acc))
+plt.figure(figsize=(10, 5))
+plt.subplot(1, 2, 1)
 
 plt.imshow(training_images[sample], cmap='gray')
 
