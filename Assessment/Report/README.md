@@ -16,7 +16,7 @@ Recognition the type of vehicle and alert the surrounding and recorder
 ## Application Overview
 This project aims at using tiny device to detect the vehicle and recognize their types. The devices involved are Arduino and mobile phone. At the beginning, we expect the sound of car will wake up the Arduino and the light begins flicker to remind people here is car coming. Then we use mobile phone as main device to run the experiment. We input data from Kaggle to Edge Impulse, then labeled data was divided into Training data and Test data. After the platform acquire the data, creating impulse and setting the parameter will lead to a visible result. During this step, image data are set in size, grayscale, chosen the proper neuron. Next, in transfer learning model, learning rata and training cycles are adjusted under circumstance. Besides, regarding as the accuracy is not good, another model are tried and contrasted with transfer learning model. At the end, we adjust them and using mobile phone’s camera to detect object and receive satisfied result.
 
-![structure](./PICTURE/structure.png)
+![Structure](./PICTURE/Structure.png)
 
 ## Data
 
@@ -41,8 +41,8 @@ After model the 1778 data, we got the result that the accuracy is 60%(actually i
 The project aims at using deep learning model to recognize the type of vehicle on the mobile phone. The data come from Kaggle are in three labels and training in transfer learning models. After pretrain model, simple classifier, transfer training and retrain the model, our model can recognize the car and bus, but not good at truck. The parameter are changed for making a better result, but there are some reason that influence device to detect the objective. Complexity of road and surrounding conditions and low image quality of light and object.
 So there are improvement needed in truck label. What’s more, to complete the project into a mature application, the wake word at the beginning will be replace with sound of car. 
 
-![tset](./PICTURE/tset.PNG)
-![AR](./PICTURE/Ar.JPG)
+![tset](./PICTURE/tset.PNG =60x60)
+![AR](./PICTURE/Ar.JPG =80x50)
 *probably ~300 words and remember images and diagrams bring results to life!*
 
 ## Bibliography
