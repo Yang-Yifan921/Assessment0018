@@ -23,7 +23,7 @@ At the beginning, we expect the sound of car will wake up the Arduino and the li
 
 Next, in transfer learning model, learning rata and training cycles are adjusted under circumstance. Besides, regarding as the accuracy is not good, another model are tried and contrasted with transfer learning model. At the end, we adjust them and using mobile phone’s camera to detect object and receive satisfied result.
 
-![Structure](./PICTURE/Structure.png)
+![Structure](https://github.com/Yang-Yifan921/Assessment0018/blob/main/Assessment/Report/PICTURE/Structure.png)
 
 ## Data
 
