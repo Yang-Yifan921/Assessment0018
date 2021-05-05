@@ -1,18 +1,15 @@
 # Project Idea
 
-## Title: Your snappy project title
+## Title: Recognition vehicle types with microphone
 
 ---
 
 ## Idea: 
 Complete the sentence:
 
-**I want my project to be able to (1) detect the type of vehicle. using the (2)edge impulse. on my (3)microphone**
+**I want my project to be able to detect the type of vehicle. using the edge impulse. on my microphone**
 
 
-1. *e.g. detect when i say "wotcha", recognise a bird in a live camera stream etc*
-2. *e.g. camera, microphone, accelerometer etc*
-3. *e.g. arduino, laptop, RPi etc*
 
 ---
 
