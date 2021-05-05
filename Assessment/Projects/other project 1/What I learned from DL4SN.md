@@ -1,13 +1,20 @@
 For the three months learning, I obtained the Complete knowledge system of deep learning and completely new experimental experience about net sensor.
 
-I sorted out the models, knowledge and drawing methods applied in the learning process.
+I sorted out knowledge, programming skills and Practical ability in the learning process.
 
 
+# Knowledge of Deep Learning
+
+## 1. Deep Learning workflow: goal-dataset-model architecture-model training-convert-run-evaluation
+## 2. Concept of activations, loss, optimizer, 
+    Gradient    SGD     Adagrad     RMSProp     Adam
+## 3. Notion of CNN, Compututer Vision, EmbeddedAI, quantization
+## 4. EmbeddedAI: bandwidth, praicacy, latency, cost
+## 5. Image classification & Transfer learning
+## 6. Time series forecast, SARIMA, RNN
 
 
-
-
-# Programming in google colab
+# Skills for Programming 
 ## 1. Imports
 tensorflow, numpy, matplotlib.pyplot, os, zipfile, random pandas, math, pathlib, matplotlib, scipy.misc
 %matplotlib inline
@@ -78,6 +85,7 @@ model.compile(optimizer=RMSprop(lr=0.0001), loss='binary_crossentropy', metrics=
 model.summary()
 
 ## 4. Processing Data
+
 ### 4.1 Normalize
 training_images  = training_images / 255.0
 test_images = test_images / 255.0
@@ -118,15 +126,15 @@ plt.subplot(1, 2, 1)
 
 plt.imshow(training_images[sample], cmap='gray')
 
-
 ## 6.Other tips(about handling label and Dataset)
-### 6.3 check the directionary
+
+### 6.1 check the directionary
 try:
     os.mkdir('/tmp/cats-v-dogs')
     os.mkdir('/tmp/cats-v-dogs/training')
 except OSError:
     pass
-### 6.4 Path
+### 6.2 Path
 import os
 MODELS_DIR = 'models/'
 if not os.path.exists(MODELS_DIR):
@@ -135,14 +143,15 @@ MODEL_TF = MODELS_DIR + 'model'
 MODEL_NO_QUANT_TFLITE = MODELS_DIR + 'model_no_quant.tflite'
 MODEL_TFLITE = MODELS_DIR + 'model.tflite'
 MODEL_TFLITE_MICRO = MODELS_DIR + 'model.cc'
-### 6.5 Seed and reproducable
+### 6.3 Seed and reproducable
 seed = 1337
 np.random.seed(seed)
 tf.random.set_seed(seed)
-### 6.6 Add noise
+### 6.4 Add noise
 y_values += 0.1 * np.random.randn(*y_values.shape)
 
 
+# Practical ability
 
 # Audrino and C++
 Generate a TensorFlow Lite Model
