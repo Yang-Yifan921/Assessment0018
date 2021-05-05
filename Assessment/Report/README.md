@@ -55,7 +55,7 @@ After model the 1778 data, we got the result that the accuracy is 60%(actually i
 The project aims at using deep learning model to recognize the type of vehicle on the mobile phone. The data come from Kaggle are in three labels and training in transfer learning models. After pretrain model, simple classifier, transfer training and retrain the model, our model can recognize the car and bus, but not good at truck. The parameter are changed for making a better result, but there are some reason that influence device to detect the objective. Complexity of road and surrounding conditions and low image quality of light and object.
 So there are improvement needed in truck label. What’s more, to complete the project into a mature application, the wake word at the beginning will be replace with sound of car. 
 
-![tset](./PICTURE/tset.PNG) { width=50% height=50% }
+![test](./PICTURE/test.PNG) { width=50% height=50% }
 ![AR](./PICTURE/Ar.JPG =80x50) { width=50% height=50% }
 
 
