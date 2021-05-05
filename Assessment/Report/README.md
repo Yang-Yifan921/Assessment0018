@@ -3,16 +3,15 @@
 Yang Yifan, https://github.com/Yang-Yifan921/Assessment0018 / link to Edge Impulse projects
 
 ## Introduction
-- an overview of what the project does
-- your inspiration for making the project 
-- examples that it is based on. 
+Urban transport is keeping developing and sensor technology can help us build a more convienent and lovable society. I want using deep learning to recognize the car is coming and their shape. So there are two parts. The first goal is to remind people disable and little animals  that there is a vehicle coming with light  flicker. And second part is detect the type of vehicle, which can help city management.
+Where it will be used? It can be applied in the parking lot and undeveloped area.
+The original of the come from my undergraduate dissertation, which is about detect the distribution of car-sharing(also new energy-driving ) in temporal-sptatial. I found that there are lock of a efficient way to calculate the type and the number of car in the parking. What’s more, because it is two-seat type so the the parking space is not used effectively in a normal scale position. So I think if we can use such tiny sensor to collect data, maybe it can not only effectively improve the traffic efficiency, but also help to analyze the urban land use problem. 
 
-*probably ~200 words and images are good!*
 
 ## Research Question
-What is the problem you are trying to solve
 
-*probably 1 or 2 sentences*
+Recognition the type of vehicle and alert the surrounding and recorder
+
 
 ## Application Overview
 Thinking back to the various application diagrams you have seen through the module - how would you describe an overview of the building blocks of your project - how do they connect, what do the component parts include.
@@ -20,10 +19,13 @@ Thinking back to the various application diagrams you have seen through the modu
 *probably ~200 words and a diagram is usually good to convey your design!*
 
 ## Data
-There are two groups of data I used. Image for detecting tpye and 
-First is image about types of vehicle. The data source is kaggle: The images are divided into Car, Bus and Truck, and those are also their labels. 
 
-*probably ~200 words and images of what the data 'looks like' are good!*
+The image is about types of vehicle. The data source is kaggle: The images are divided into Car, Bus and Truck, and those are also their labels. 
+
+During the experiment, the accuracy is not satisfied is a obvious problem. So, I recollected the data. More than download from Kaggle, I also search for high-definition car pictures with typical features. Because of the high complexity of the color and elements of the image, I filter out the samples with wrong labels one by one for each type of data.
+In the process of data cleaning, it is found that the original sample contains a variety of car shapes, which may be because the samples are also collected through deep learning, so there are some errors. In the data processing, as human brain recognition, it will be difficult to distinguish the specific types, too (even if there are only three kinds), such as two-tier bus and large vans, car and truck which only showing head. Through comparison and summary, it is considered that the following factors interfere with model learning: the diversity of vehicle shape and type; Complexity of road and surrounding conditions and low image quality of light and object.
+
+
 
 ## Model
 This is a Deep Learning project! What model architecture did you use? Did you try different ones? Why did you choose the ones you did?
