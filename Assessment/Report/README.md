@@ -42,12 +42,15 @@ In the process of data cleaning, it is found that the original sample contains a
 
 The model I using is transfer learning model, which can fine tune a pre-trained image classification model on your data. Good performance even with relatively small image datasets. At the first, the data are divided into 3 types, and their labels is Bus, Car and Truck. Then split them in Training data and Test data. The number of training data is 1403 and Test data is 375. Next, the data input in Edge Impulse are change with size. Image witdth and height is 48*48, and resize mode is squash. Then set flatten layer. The transfer learning would input flatten and output features of 3(Bus, Car, Truck). At the first time, the number of training cycles is 20, and learning rata is 0.0005. Minimum confidence rating is 0.60. Because of the low accuracy, I adjust the epoch and neuron. For contrasting the result, I used simpler classifier to model the data.
 
+![parameter](./PICTURE/parameter.png)
+![code](./PICTURE/code.png)
+
 
 ## Experiments
 
 After model the 1778 data, we got the result that the accuracy is 60%(actually is lower than the data before I eliminate the illegible photos), and the loss is 0.80. For improvement the model accuracy, we analyze the confusion matrix and found that Bus and Car Truck is easy to be recognized but the Truck has a bad result. The Truck is easy to be thought as Bus. Then I adjust the number of training cycles to 50, the learning rate to 0.0001. Then retrain the model for live classification. Connecting the Edge Impulse, I use my mobile phone to detect the type of vehicles, it can recognize the car and bus and have a relatively high accuracy, but bad performance on Truck. There are the step to deployment for model integration and use in Arduino. 
 
-![parameter](./PICTURE/parameter.png)
+
 
 
 ## Results and Observations
@@ -55,8 +58,8 @@ After model the 1778 data, we got the result that the accuracy is 60%(actually i
 The project aims at using deep learning model to recognize the type of vehicle on the mobile phone. The data come from Kaggle are in three labels and training in transfer learning models. After pretrain model, simple classifier, transfer training and retrain the model, our model can recognize the car and bus, but not good at truck. The parameter are changed for making a better result, but there are some reason that influence device to detect the objective. Complexity of road and surrounding conditions and low image quality of light and object.
 So there are improvement needed in truck label. What’s more, to complete the project into a mature application, the wake word at the beginning will be replace with sound of car. 
 
-![test](./PICTURE/test.PNG) { width=50% height=50% }
-![AR](./PICTURE/Ar.JPG =80x50) { width=50% height=50% }
+![test](./PICTURE/test.PNG) 
+![AR](./PICTURE/Ar.JPG) 
 
 
 ## Bibliography
