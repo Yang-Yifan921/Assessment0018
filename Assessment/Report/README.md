@@ -14,9 +14,9 @@ Recognition the type of vehicle and alert the surrounding and recorder
 
 
 ## Application Overview
-Thinking back to the various application diagrams you have seen through the module - how would you describe an overview of the building blocks of your project - how do they connect, what do the component parts include.
+This project aims at using tiny device to detect the vehicle and recognize their types. The devices involved are Arduino and mobile phone. At the beginning, we expect the sound of car will wake up the Arduino and the light begins flicker to remind people here is car coming. Then we use mobile phone as main device to run the experiment. We input data from Kaggle to Edge Impulse, then labeled data was divided into Training data and Test data. After the platform acquire the data, creating impulse and setting the parameter will lead to a visible result. During this step, image data are set in size, grayscale, chosen the proper neuron. Next, in transfer learning model, learning rata and training cycles are adjusted under circumstance. Besides, regarding as the accuracy is not good, another model are tried and contrasted with transfer learning model. At the end, we adjust them and using mobile phone’s camera to detect object and receive satisfied result.
 
-*probably ~200 words and a diagram is usually good to convey your design!*
+![structure](./PICTURE/structure.png)
 
 ## Data
 
@@ -28,23 +28,18 @@ In the process of data cleaning, it is found that the original sample contains a
 ![sample](./PICTURE/sample.png)
 ![feature](./PICTURE/feature.png)
 ## Model
-This is a Deep Learning project! What model architecture did you use? Did you try different ones? Why did you choose the ones you did?
+The model I using is transfer learning model, which can fine tune a pre-trained image classification model on your data. Good performance even with relatively small image datasets. At the first, the data are divided into 3 types, and their labels is Bus, Car and Truck. Then split them in Training data and Test data. The number of training data is 1403 and Test data is 375. Next, the data input in Edge Impulse are change with size. Image witdth and height is 48*48, and resize mode is squash. Then set flatten layer. The transfer learning would input flatten and output features of 3(Bus, Car, Truck). At the first time, the number of training cycles is 20, and learning rata is 0.0005. Minimum confidence rating is 0.60. Because of the low accuracy, I adjust the epoch and neuron. For contrasting the result, I used simpler classifier to model the data.
 
-
-
-![code](./PICTURE/code.png)
-*probably ~200 words and a diagram is usually good to describe your model!*
 
 ## Experiments
-What experiments did you run to test your project? What parameters did you change? How did you measure performance? Did you write any scripts to evaluate performance? Did you use any tools to evaluate performance? Do you have graphs of results? 
-
+After model the 1778 data, we got the result that the accuracy is 60%(actually is lower than the data before I eliminate the illegible photos), and the loss is 0.80. For improvement the model accuracy, we analyze the confusion matrix and found that Bus and Car Truck is easy to be recognized but the Truck has a bad result. The Truck is easy to be thought as Bus. Then I adjust the number of training cycles to 50, the learning rate to 0.0001. Then retrain the model for live classification. Connecting the Edge Impulse, I use my mobile phone to detect the type of vehicles, it can recognize the car and bus and have a relatively high accuracy, but bad performance on Truck. There are the step to deployment for model integration and use in Arduino. 
 
 ![parameter](./PICTURE/parameter.png)
 
-*probably ~300 words and graphs and tables are usually good to convey your results!*
 
 ## Results and Observations
-Synthesis the main results and observations you made from building the project. Did it work perfectly? Why not? What worked and what didn't? Why? What would you do next if you had more time?  
+The project aims at using deep learning model to recognize the type of vehicle on the mobile phone. The data come from Kaggle are in three labels and training in transfer learning models. After pretrain model, simple classifier, transfer training and retrain the model, our model can recognize the car and bus, but not good at truck. The parameter are changed for making a better result, but there are some reason that influence device to detect the objective. Complexity of road and surrounding conditions and low image quality of light and object.
+So there are improvement needed in truck label. What’s more, to complete the project into a mature application, the wake word at the beginning will be replace with sound of car. 
 
 ![tset](./PICTURE/tset.PNG)
 ![AR](./PICTURE/Ar.JPG)
