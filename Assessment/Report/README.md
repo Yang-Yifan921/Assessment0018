@@ -33,16 +33,16 @@ During the experiment, the accuracy is not satisfied is a obvious problem. So, I
 
 In the process of data cleaning, it is found that the original sample contains a variety of car shapes, which may be because the samples are also collected through deep learning, so there are some errors. In the data processing, as human brain recognition, it will be difficult to distinguish the specific types, too (even if there are only three kinds), such as two-tier bus and large vans, car and truck which only showing head. Through comparison and summary, it is considered that the following factors interfere with model learning: the diversity of vehicle shape and type; Complexity of road and surrounding conditions and low image quality of light and object.
 
-![sample](./PICTURE/sample.png)
-![feature](./PICTURE/feature.png)
+![sample](https://github.com/Yang-Yifan921/Assessment0018/blob/main/Assessment/Report/PICTURE/sample.png)
+![feature](https://github.com/Yang-Yifan921/Assessment0018/blob/main/Assessment/Report/PICTURE/feature.png)
 
 
 ## Model
 
 The model I using is transfer learning model, which can fine tune a pre-trained image classification model on your data. Good performance even with relatively small image datasets. At the first, the data are divided into 3 types, and their labels is Bus, Car and Truck. Then split them in Training data and Test data. The number of training data is 1403 and Test data is 375. Next, the data input in Edge Impulse are change with size. Image witdth and height is 48*48, and resize mode is squash. Then set flatten layer. The transfer learning would input flatten and output features of 3(Bus, Car, Truck). At the first time, the number of training cycles is 20, and learning rata is 0.0005. Minimum confidence rating is 0.60. Because of the low accuracy, I adjust the epoch and neuron. For contrasting the result, I used simpler classifier to model the data.
 
-![parameter](./PICTURE/parameter.png)
-![code](./PICTURE/code.png)
+![parameter](https://github.com/Yang-Yifan921/Assessment0018/blob/main/Assessment/Report/PICTURE/parameter.png)
+![code](https://github.com/Yang-Yifan921/Assessment0018/blob/main/Assessment/Report/PICTURE/code.png)
 
 
 ## Experiments
@@ -57,7 +57,7 @@ After model the 1778 data, we got the result that the accuracy is 60%(actually i
 The project aims at using deep learning model to recognize the type of vehicle on the mobile phone. The data come from Kaggle are in three labels and training in transfer learning models. After pretrain model, simple classifier, transfer training and retrain the model, our model can recognize the car and bus, but not good at truck. The parameter are changed for making a better result, but there are some reason that influence device to detect the objective. Complexity of road and surrounding conditions and low image quality of light and object.
 So there are improvement needed in truck label. What’s more, to complete the project into a mature application, the wake word at the beginning will be replace with sound of car. 
 
-![test](./PICTURE/test.png) 
+![test](https://github.com/Yang-Yifan921/Assessment0018/blob/main/Assessment/Report/PICTURE/test.png) 
 
 
 
