@@ -26,20 +26,28 @@ During the experiment, the accuracy is not satisfied is a obvious problem. So, I
 In the process of data cleaning, it is found that the original sample contains a variety of car shapes, which may be because the samples are also collected through deep learning, so there are some errors. In the data processing, as human brain recognition, it will be difficult to distinguish the specific types, too (even if there are only three kinds), such as two-tier bus and large vans, car and truck which only showing head. Through comparison and summary, it is considered that the following factors interfere with model learning: the diversity of vehicle shape and type; Complexity of road and surrounding conditions and low image quality of light and object.
 
 ![sample](./PICTURE/sample.png)
-
+![feature](./PICTURE/feature.png)
 ## Model
 This is a Deep Learning project! What model architecture did you use? Did you try different ones? Why did you choose the ones you did?
 
+
+
+![code](./PICTURE/code.png)
 *probably ~200 words and a diagram is usually good to describe your model!*
 
 ## Experiments
 What experiments did you run to test your project? What parameters did you change? How did you measure performance? Did you write any scripts to evaluate performance? Did you use any tools to evaluate performance? Do you have graphs of results? 
+
+
+![parameter](./PICTURE/parameter.png)
 
 *probably ~300 words and graphs and tables are usually good to convey your results!*
 
 ## Results and Observations
 Synthesis the main results and observations you made from building the project. Did it work perfectly? Why not? What worked and what didn't? Why? What would you do next if you had more time?  
 
+![tset](./PICTURE/tset.PNG)
+![AR](./PICTURE/Ar.JPG)
 *probably ~300 words and remember images and diagrams bring results to life!*
 
 ## Bibliography
