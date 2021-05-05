@@ -153,7 +153,7 @@ y_values += 0.1 * np.random.randn(*y_values.shape)
 
 # Practical ability
 
-# Audrino and C++
+## Audrino and C++
 Generate a TensorFlow Lite Model
 quantization
 ## Install xxd if it is not available
