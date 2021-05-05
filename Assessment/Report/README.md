@@ -25,7 +25,7 @@ The image is about types of vehicle. The data source is kaggle: The images are d
 During the experiment, the accuracy is not satisfied is a obvious problem. So, I recollected the data. More than download from Kaggle, I also search for high-definition car pictures with typical features. Because of the high complexity of the color and elements of the image, I filter out the samples with wrong labels one by one for each type of data.
 In the process of data cleaning, it is found that the original sample contains a variety of car shapes, which may be because the samples are also collected through deep learning, so there are some errors. In the data processing, as human brain recognition, it will be difficult to distinguish the specific types, too (even if there are only three kinds), such as two-tier bus and large vans, car and truck which only showing head. Through comparison and summary, it is considered that the following factors interfere with model learning: the diversity of vehicle shape and type; Complexity of road and surrounding conditions and low image quality of light and object.
 
-![Image of Sample](https://github.com/Yang-Yifan921/Assessment0018/tree/main/Assessment/Report/PICTURE/sample.png)
+![sample](./PICTURE/sample.png)
 
 ## Model
 This is a Deep Learning project! What model architecture did you use? Did you try different ones? Why did you choose the ones you did?
