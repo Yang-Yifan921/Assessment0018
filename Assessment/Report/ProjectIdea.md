@@ -20,4 +20,6 @@ What data will you use and what data will you capture?
 The data of vehicle from kaggle, with type of car, bus and truck.
 ----
 
+
+![test](./PICTURE/test.png) 
 Note: in addition to editing the text here, also remember to add the above information to one sticky note on the Miro board.
